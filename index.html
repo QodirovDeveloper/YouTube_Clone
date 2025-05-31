@@ -12,6 +12,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
+  <link rel="icon" href="/images/iconn.svg">
   <script>
     tailwind.config = {
       theme: {
@@ -42,14 +43,14 @@
             <i class="fa-solid fa-bars"></i>
           </a>
           <a href="/" class="">
-            <img src="/images/logo.svg" alt="logo">
+            <img src="/images/logo.svg" width="90px" alt="logo">
           </a>
         </div>
 
         <!--! search -->
         <div class="flex items-center gap-4">
           <div class="">
-            <form class="relative">
+            <form class="relative max-sm:hidden">
               <input type="text" id="search" placeholder="Search..." required
                 class=" pl-10 xl:w-[500px] md:w-[300px] w-full py-2 rounded-full border border-[#303030] bg-[#121212] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1C62B9] focus:border-[#1C62B9]" />
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
@@ -60,55 +61,72 @@
               </button>
             </form>
           </div>
+        </div>
+
+
+        <div class="flex items-center gap-2">
+
+          <!-- ! search hidden -->
+          <button id="" class="sm:hidden ">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+
+          <!-- ! microphone -->
           <a href="#"
-            class="px-[14px] py-3 rounded-full hover:bg-[#3D3D3D] bg-[#272727] flex items-center justify-center  text-[17px]">
+            class="max-[440px]:hidden px-3 py-[10px] rounded-full hover:bg-[#3D3D3D] max-sm:bg-transparent bg-[#272727] flex items-center justify-center  text-[17px]">
             <i class="fa-solid fa-microphone"></i>
           </a>
-        </div>
+          <!-- ! created account  -->
+          <!-- ! higgen & flex -->
+          <div class="hidden items-center gap-3">
 
-        <!-- ! created account  -->
-        <div class="hidden items-center gap-3">
-
-          <!-- ! + create -->
-          <div class="">
-            <a href="#"
-              class="px-[14px] py-2 rounded-full hover:bg-[#3D3D3D] bg-[#272727] flex items-center justify-center  text-[17px]">
-              <div class="pr-2">
-                <i class="fa-solid fa-plus"></i>
-              </div>
-              Create
-            </a>
-          </div>
-
-          <!-- ! bell -->
-          <div class="">
-            <a href="#" class="p-3 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
-              <i class="fa-regular fa-bell"></i>
-            </a>
-          </div>
-
-          <!-- ! user photo -->
-          <div class="">
-            <a href="#" class="">
-              <img src="/images/me.jpg" class="rounded-full w-10" alt="my photo">
-            </a>
-          </div>
-        </div>
-
-        <!-- ! create an account -->
-        <div class="flex items-center gap-3">
-
-          <a href="#" class="py-3 px-5 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
-            <i class="fa-solid fa-ellipsis-vertical"></i>
-          </a>
-          <a href="#"
-            class="px-[14px] py-2 rounded-full hover:bg-[#272727] bg-transparent border border-[#575757] hover:border-[#272727] flex items-center justify-center  text-[17px]">
-            <div class="pr-2">
-              <i class="fa-regular fa-circle-user"></i>
+            <!-- ! + create video -->
+            <div class="">
+              <a href="#"
+                class="px-[14px] py-2 rounded-full hover:bg-[#3D3D3D] bg-[#272727] flex items-center justify-center text-sm sm:text-[17px]">
+                <div class="pr-2">
+                  <i class="fa-solid fa-plus"></i>
+                </div>
+                Create
+              </a>
             </div>
-            Create
-          </a>
+
+            <!-- ! bell -->
+            <div class=" max-sm:hidden">
+              <a href="#" class="p-3 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
+                <i class="fa-regular fa-bell"></i>
+              </a>
+            </div>
+
+            <!-- ! user photo -->
+            <div class="">
+              <a href="#" class="">
+                <img src="/images/me.jpg" class="rounded-full w-10" alt="my photo">
+              </a>
+            </div>
+          </div>
+
+          <!-- ! create an account -->
+          <!-- ! higgen & flex -->
+          <div class="flex items-center sm:gap-3">
+            <!-- ! search button hidden -->
+
+            <a href="#" class="py-3 px-5 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
+              <i class="fa-solid fa-ellipsis-vertical"></i>
+            </a>
+            <a href="#"
+              class="px-[14px] py-2 rounded-full hover:bg-[#272727] bg-transparent border border-[#575757] hover:border-[#272727] flex items-center justify-center text-sm sm:text-[17px]">
+              <div class="pr-2">
+                <i class="fa-regular fa-circle-user"></i>
+              </div>
+              Login
+            </a>
+          </div>
+
         </div>
+
+
+
       </div>
     </div>
   </div>
