@@ -31,7 +31,6 @@
 </head>
 
 <body class="bg-[#0F0F0F] text-white font-roboto">
-  <i class="fa-regular fa-circle-user"></i>
 
   <!-- ! nav -->
   <div class="">
@@ -49,17 +48,17 @@
 
         <!--! search -->
         <div class="flex items-center gap-4">
-          <div class="flex justify-center items-center py-4">
-            <div class="relative w-full max-w-md">
+          <div class="">
+            <form class="relative">
               <input type="text" id="search" placeholder="Search..." required
-                class="w-full pl-10 pr-72 py-2 rounded-full border border-[#303030] bg-[#121212] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1C62B9] focus:border-[#1C62B9]" />
+                class=" pl-10 xl:w-[500px] md:w-[300px] w-full py-2 rounded-full border border-[#303030] bg-[#121212] text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#1C62B9] focus:border-[#1C62B9]" />
               <div class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
               </div>
               <button type="submit"
                 class="absolute right-0 top-0 bottom-0 px-4 py-2  bg-[#222222] border-[#303030] border rounded-br-full rounded-tr-full ">
                 <i class="fa-solid fa-magnifying-glass"></i>
               </button>
-            </div>
+            </form>
           </div>
           <a href="#"
             class="px-[14px] py-3 rounded-full hover:bg-[#3D3D3D] bg-[#272727] flex items-center justify-center  text-[17px]">
@@ -67,7 +66,8 @@
           </a>
         </div>
 
-        <div class="flex items-center gap-3">
+        <!-- ! created account  -->
+        <div class="hidden items-center gap-3">
 
           <!-- ! + create -->
           <div class="">
@@ -87,12 +87,27 @@
             </a>
           </div>
 
-          <!-- ! user has -->
-           <div class="">
-            <a href="#" class="rounded-full w-5">
-              <img src="" alt="">
+          <!-- ! user photo -->
+          <div class="">
+            <a href="#" class="">
+              <img src="/images/me.jpg" class="rounded-full w-10" alt="my photo">
             </a>
-           </div>
+          </div>
+        </div>
+
+        <!-- ! create an account -->
+        <div class="flex items-center gap-3">
+
+          <a href="#" class="py-3 px-5 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
+            <i class="fa-solid fa-ellipsis-vertical"></i>
+          </a>
+          <a href="#"
+            class="px-[14px] py-2 rounded-full hover:bg-[#272727] bg-transparent border border-[#575757] hover:border-[#272727] flex items-center justify-center  text-[17px]">
+            <div class="pr-2">
+              <i class="fa-regular fa-circle-user"></i>
+            </div>
+            Create
+          </a>
         </div>
       </div>
     </div>
