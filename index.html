@@ -36,10 +36,10 @@
   <!-- !!! nav -->
   <div class="">
     <div class="container mx-auto pl-4 pr-4 pt-2">
-      <div class="flex items-center justify-between">
+      <div class="flex items-center justify-between fixed top-0 left-0 w-full bg-[#121212]  shadow-md z-[999]">
         <div class="flex items-center gap-4">
           <!-- ! menu -->
-          <a href="#" class="p-3 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px]">
+          <a href="#" class="p-3 rounded-full hover:bg-[#272727] flex items-center justify-center text-[20px] ">
             <i class="fa-solid fa-bars"></i>
           </a>
           <a href="/" class="">
@@ -128,7 +128,7 @@
 
 
   <!-- !!! main -->
-  <div class="container mx-auto pl-1 pr-4 pt-2">
+  <div class="container mx-auto mt-9 pl-1 pr-4 pt-2">
     <div class="flex">
 
       <!-- ! menu -->
@@ -193,13 +193,13 @@
         </div>
 
         <!-- ! videos -->
-         
-        <div class="location-vid">
+
+        <div id="open" class="location-vid">
           <div class="grid max-[570px]:grid-cols-1 max-[960px]:grid-cols-2 min-[960px]:grid-cols-3 gap-4 ">
 
             <div class="">
               <div class="pt-8">
-                <video class="rounded-xl hover:rounded-none" src="/videos/Jah-Khalib–Доча.mp4" controls></video>
+                <video class="rounded-xl hover:rounded-none" src="/videos/Jah-Khalib–Доча.mp4"></video>
               </div>
               <div class="pt-2 flex items-start justify-center gap-4">
                 <img class="w-9 rounded-full" src="/images/Jah-Khalib_Доча.jpg" alt="Jah-Khalib">
@@ -214,13 +214,27 @@
                 </p>
               </div>
             </div>
-
           </div>
         </div>
 
       </div>
     </div>
   </div>
+
+  <div id="modal_overlay"
+    class="fixed inset-0 z-[100] flex items-center justify-center bg-black/30 opacity-0 pointer-events-none transition-opacity duration-300">
+
+    <div class="bg-slate-700 p-4 w-[90%] max-w-md">
+      <div>
+        <p>Modal matni: bu yerda nimadir bo‘ladi.</p>
+      </div>
+      <div class="text-right mt-4">
+        <button id="close">Yopish</button>
+      </div>
+    </div>
+  </div>
+
+
   <!--
 sm	640px	@media (min-width: 640px)
 md	768px	@media (min-width: 768px)
@@ -229,6 +243,7 @@ xl	1280px	@media (min-width: 1280px)
 2xl	1536px	@media (min-width: 1536px)
 
 -->
+  <script src="/app.js"></script>
 </body>
 
 </html>
